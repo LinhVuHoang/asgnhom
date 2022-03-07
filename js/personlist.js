@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded',function (){
 <td>${data[i].id}</td>
 <td>${data[i].name}</td>
 <td>${data[i].address}</td>
-<td>${data[i].mobilephone}</td>
+<td>+84${data[i].mobilephone}</td>
 <td>${data[i].cmnd}</td>
 <td>${data[i].budget}</td>
 </tr>

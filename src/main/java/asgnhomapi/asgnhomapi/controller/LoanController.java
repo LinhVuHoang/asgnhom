@@ -45,7 +45,6 @@ public ResponseEntity<Object> update(@PathVariable int id, @RequestBody Loan upd
     if (loan.isPresent()) {
         Loan loan1 = loan.get();
         loan1.setLoanamount(updateloan.getLoanamount());
-        loan1.setPerioddate(updateloan.getPerioddate());
         loan1.setPeriodmonth(updateloan.getPeriodmonth());
         loan1.setRate(updateloan.getRate());
         loan1.setStatus(updateloan.getStatus());

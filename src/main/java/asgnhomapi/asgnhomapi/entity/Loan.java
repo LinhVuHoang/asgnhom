@@ -19,8 +19,6 @@ public class Loan {
     private int id;
     @Column(name = "So_tien_vay")
     private double loanamount;
-    @Column(name="So_ngay_gui")
-    private int perioddate;
     @Column(name="So_thang_gui")
     private int periodmonth;
     @Column(name="Ty_le_lai_suat")

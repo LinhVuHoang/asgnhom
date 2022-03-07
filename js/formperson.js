@@ -26,6 +26,9 @@ document.addEventListener('DOMContentLoaded',function (){
             if (xmlHttpRequest.readyState == 4 && xmlHttpRequest.status == 201) {
                 alert('Create new person success!');
                 window.location.href = "/asgnhom/personlist.html";
+            }else if(xmlHttpRequest.status != 201) {
+                alert('Create new person failed!');
+                window.location.href = "/asgnhom/personlist.html";
             }
         }
         xmlHttpRequest.open('post','http://localhost:8080/api/v1/persons',false)
